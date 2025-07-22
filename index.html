@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bandaru Mounika Tulasi | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Bungee+Tint&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #14b8a6;
+      --bg: #0f172a;
+      --text: #e2e8f0;
+      --accent: #334155;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--bg);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--accent);
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .skills, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .skill, .project {
+      background: var(--accent);
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      min-width: 150px;
+      text-align: center;
+    }
+
+    .project a {
+      display: block;
+      margin-top: 0.5rem;
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .project  {
+      display: block;
+      margin-top: 0.5rem;
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .project {
+      display: block;
+      margin-top: 0.5rem;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    .btn {
+      background: var(--primary);
+      color: black;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.75rem;
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 5px;
+      color: white;
+      resize: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+      }
+
+      .skills, .projects {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bandaru Mounika Tulasi</h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="mounika.jpg" alt="Profile Picture"/>
+    <h2>Hi, I'm Bandaru Mounika Tulasi</h2>
+    <p>"I am a dedicated and enthusiastic full-stack web developer, eager to contribute my skills and grow within a dynamic tech environment. With a strong foundation in both front-end and back-end technologies,
+       I am looking for my first professional opportunity where I can apply my knowledge, collaborate with innovative teams, and continuously evolve as a developer.".</p>
+    <a href="Bandaru-Mounika-Tulasi-resume.pdf" class="btn" download>Download Resume</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+     I am a motivated and enthusiastic recent graduate with a strong foundation in Electrical Engineering.
+      I am eager to apply my skills and knowledge to real-world challenges and contribute effectively to a dynamic team.
+       With a keen interest in learning and growth, I am adaptable, quick to grasp new concepts, and committed to delivering quality work. 
+       I am seeking an opportunity to start my professional journey and make a meaningful impact.
+    </p>
+
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">Sql</div>
+      <div class="skill">BootStrap</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects"></div>
+      <div class="project">
+        <h3>Machine Learning Based ANFIS Control for Power Quality Enhancement in Hybrid Micro Grids</h3>
+        <p>Implemented a machine learning-based control system to optimize voltage regulation in a photovoltaic-wind
+          hybrid microgrid. Replaced traditional IC-PI controllers with ML models for real-time voltage stability,better
+          power distribution, and lower THD.</p>
+        <a href="#">GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Online Exam Portal with MCQs</h3>
+        <p>Designed a full-featured exam portal supporting MCQ-based assessments. Enabled secure login, dynamic exam
+         creation, automated grading, and result analysis..</p>
+        <a href="#">GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Expense Tracker Web App</h3>
+        <p>Built a responsive web app using HTML, CSS, JavaScript, and Bootstrap for tracking personal expenses. Features
+          include real-time summaries, category-based spending insights, and mobile-friendly design.</p>
+        <a href="#">GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>My personal portfolio built with HTML, CSS, JS.</p>
+        <a href="#">GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Travel Website</h3>
+        <p>Discover and book unforgettable travel experiences, destinations, and tours worldwide.
+           User-friendly design with real-time search, itinerary planning, and secure booking..</p>
+        <a href="#">GitHub</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Bandaru Mounika. All rights reserved.
+  </footer>
+
+  <script>
+    // You can add JS validation or form handling here later
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Message sent! (Form is static for now)');
+    });
+  </script>
+</body>
+</html>
